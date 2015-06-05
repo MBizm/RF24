@@ -279,7 +279,7 @@ void loop(void)
   {
     // If the character on serial input is in a valid range...
     char c = Serial.read();
-    if ( c >= '1' && c <= '6' )
+    if ( c >= '2' && c <= '6' )
     {
       // It is our address
       EEPROM.write(address_at_eeprom_location,c-'0');
